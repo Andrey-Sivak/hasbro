@@ -1,0 +1,32 @@
+.footer {
+  position: relative;
+  padding-bottom: 20px;
+  background-color: $light-blue;
+  height: 210px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: $primary-color;
+  }
+
+  &__left,
+  &__right {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__left {
+    left: 0;
+  }
+
+  &__right {
+    right: 0;
+  }
+}

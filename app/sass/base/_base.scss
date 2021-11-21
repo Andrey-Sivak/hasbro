@@ -1,0 +1,13 @@
+.container {
+  max-width: $container;
+  margin: 0 auto;
+
+  @include response-to(large) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.no-scrolling {
+  overflow: hidden;
+}
