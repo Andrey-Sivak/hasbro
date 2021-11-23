@@ -176,34 +176,88 @@
           <p class="second-section__slider_text">Главный путешественник!</p>
         </div>
       </div>
+      <div class="second-section__slider_item-wrap red">
+        <div class="second-section__slider_item ">
+          <p class="second-section__slider_caption">Плюшность</p>
+          <p class="second-section__slider_text">Победители обнимашек!</p>
+        </div>
+      </div>
       <div class="second-section__slider_item-wrap blue">
         <div class="second-section__slider_item ">
           <p class="second-section__slider_caption">Летабельность</p>
-          <p class="second-section__slider_text"></p>
+          <p class="second-section__slider_text">Потолок или небо? Не предел! Лучшие летчики!</p>
         </div>
       </div>
       <div class="second-section__slider_item-wrap orange">
         <div class="second-section__slider_item ">
           <p class="second-section__slider_caption">Геройскость</p>
-          <p class="second-section__slider_text"></p>
+          <p class="second-section__slider_text">Герои на все времена! Самые-самые!</p>
         </div>
       </div>
       <div class="second-section__slider_item-wrap purple">
         <div class="second-section__slider_item ">
           <p class="second-section__slider_caption">Волшебность</p>
-          <p class="second-section__slider_text"></p>
+          <p class="second-section__slider_text">Творить волшебство? Они это умеют!</p>
         </div>
       </div>
       <div class="second-section__slider_item-wrap red">
         <div class="second-section__slider_item ">
           <p class="second-section__slider_caption">Милашность</p>
-          <p class="second-section__slider_text"></p>
+          <p class="second-section__slider_text">Самые милые! Яркость и симпатичность — это про них!</p>
         </div>
       </div>
       <div class="second-section__slider_item-wrap purple">
         <div class="second-section__slider_item ">
           <p class="second-section__slider_caption">Сказочность</p>
-          <p class="second-section__slider_text"></p>
+          <p class="second-section__slider_text">Прямиком из сказки! Так и хочется послушать истории про них</p>
+        </div>
+      </div>
+      <div class="second-section__slider_item-wrap green">
+        <div class="second-section__slider_item ">
+          <p class="second-section__slider_caption">Строибельность</p>
+          <p class="second-section__slider_text">Строить что угодно! Предел — только фантазия!</p>
+        </div>
+      </div>
+      <div class="second-section__slider_item-wrap green">
+        <div class="second-section__slider_item ">
+          <p class="second-section__slider_caption">Видоменябельность</p>
+          <p class="second-section__slider_text">Чемпионы по переменам! Каждый день — новая игрушка!</p>
+        </div>
+      </div>
+      <div class="second-section__slider_item-wrap orange">
+        <div class="second-section__slider_item ">
+          <p class="second-section__slider_caption">СПАСАТЕЛЬНОСТЬ</p>
+          <p class="second-section__slider_text">Помощники супергероям? Или новые герои? Спасатели!</p>
+        </div>
+      </div>
+      <div class="second-section__slider_item-wrap green">
+        <div class="second-section__slider_item ">
+          <p class="second-section__slider_caption">Взрослость</p>
+          <p class="second-section__slider_text">Даже взрослые играют! Самая взрослая!</p>
+        </div>
+      </div>
+      <div class="second-section__slider_item-wrap blue">
+        <div class="second-section__slider_item ">
+          <p class="second-section__slider_caption">ПУЛЯТЕЛЬНОСТЬ</p>
+          <p class="second-section__slider_text">Пиу-пиу! С ними ты — чемпион по стрельбе!</p>
+        </div>
+      </div>
+      <div class="second-section__slider_item-wrap orange">
+        <div class="second-section__slider_item ">
+          <p class="second-section__slider_caption">Детективность</p>
+          <p class="second-section__slider_text">Тайны и секреты? Не для тебя! Лучшие детективы готовы к новым делам!</p>
+        </div>
+      </div>
+      <div class="second-section__slider_item-wrap red">
+        <div class="second-section__slider_item ">
+          <p class="second-section__slider_caption">ВЕСЕЛИБЕЛЬНОСТЬ</p>
+          <p class="second-section__slider_text">Главные хохмачи! Самые веселые!</p>
+        </div>
+      </div>
+      <div class="second-section__slider_item-wrap green">
+        <div class="second-section__slider_item ">
+          <p class="second-section__slider_caption">Сообразибельность</p>
+          <p class="second-section__slider_text">Самые сообразительные! Решения и ответы уже есть!</p>
         </div>
       </div>
     </div>
@@ -247,7 +301,7 @@
 
     <div class="third-section__wrap">
       <p class="third-section__caption">Давай подберЁм подарок!</p>
-      <form action="#" class="form">
+      <form action="#" class="form pb-80">
         <div class="form__field">
           <p class="form__field_text">Кому ты выбираешь <br>подарок?</p>
           <div class="gender boy" data-gender="boy">
@@ -268,19 +322,26 @@
           </div>
           <input type="hidden" name="gender" value="">
         </div>
-        <div class="form__field">
+        <div class="form__field form__field_age hide">
           <p class="form__field_text">Сколько лет <br>счастливчику?</p>
-
+          <div class="select feedback-select">
+            <select name="age" data-placeholder="Возраст" required>
+              <option value=""></option>
+              <option value="1">3–5 лет</option>
+              <option value="2">6–8 лет</option>
+              <option value="3">9–11 лет</option>
+            </select>
+          </div>
         </div>
-        <p class="form__field_text">Вот что дети в этом возрасте больше всего ценят в игрушках. <br>Отмечай свойства, а мы покажем подходящие подарки:</p>
-        <div class="form__field">
-          <span class="value red" data-toggle="true">Сказочность</span>
-          <span class="value green" data-toggle="true">ВИДОМЕНЯБЕЛЬНОСТЬ</span>
-          <span class="value blue" data-toggle="true">Волшебность</span>
-          <span class="value orange" data-toggle="true">Подарибельность</span>
-          <span class="value red" data-toggle="true">Милашность</span>
-          <span class="value green" data-toggle="true">Взрослость</span>
-          <span class="value red" data-toggle="true">плюшность</span>
+        <p class="form__field_text form__field_value hide">Вот что дети в этом возрасте больше всего ценят в игрушках. <br>А что из этого интересно твоему ребенку? Выбери:</p>
+        <div class="form__field form__field_value hide">
+          <span class="value red">Сказочность</span>
+          <span class="value green">ВИДОМЕНЯБЕЛЬНОСТЬ</span>
+          <span class="value blue">Волшебность</span>
+          <span class="value orange">Подарибельность</span>
+          <span class="value red">Милашность</span>
+          <span class="value green">Взрослость</span>
+          <span class="value red">плюшность</span>
           <input type="hidden" name="value" value="">
         </div>
       </form>
@@ -291,173 +352,176 @@
   </section>
 
   <section class="fourth-section">
-    <div class="list">
+    <div class="list hide">
+      <p class="list__title">Вот что наверняка понравится:</p>
       <div class="list__wrap">
 
-        <div class="list__item">
-          <figure class="list__item_img">
-            <img src="./dist/img/img-1.png" alt="img">
-          </figure>
-          <figure class="list__item_logo">
-            <img src="./dist/img/nerf-logo.png" alt="img">
-          </figure>
-          <p class="list__item_title">Игровой набор Нёрф Ультра One NERF E6595</p>
-          <div class="rating">
-            <div class="rating__row green">
-              <span class="rating__name">Волшебность</span>
-              <span class="rating__score">4,8</span>
+        <div class="list__wrap_container">
+          <div class="list__item">
+            <figure class="list__item_img">
+              <img src="./dist/img/img-1.png" alt="img">
+            </figure>
+            <figure class="list__item_logo">
+              <img src="./dist/img/nerf-logo.png" alt="img">
+            </figure>
+            <p class="list__item_title">Игровой набор Нёрф Ультра One NERF E6595</p>
+            <div class="rating">
+              <div class="rating__row green">
+                <span class="rating__name">Волшебность</span>
+                <span class="rating__score">4,8</span>
+              </div>
+              <div class="rating__row orange">
+                <span class="rating__name">Подарибельность</span>
+                <span class="rating__score">5,0</span>
+              </div>
+              <div class="rating__row red">
+                <span class="rating__name">Сказочность</span>
+                <span class="rating__score">4,7</span>
+              </div>
             </div>
-            <div class="rating__row orange">
-              <span class="rating__name">Подарибельность</span>
-              <span class="rating__score">5,0</span>
-            </div>
-            <div class="rating__row red">
-              <span class="rating__name">Сказочность</span>
-              <span class="rating__score">4,7</span>
-            </div>
+            <a href="#" class="list__item_btn">Где купить?</a>
+            <p class="list__item_note">Для детей от 8ми лет</p>
           </div>
-          <a href="#" class="list__item_btn">Где купить?</a>
-          <p class="list__item_note">Для детей от 8ми лет</p>
-        </div>
-        <div class="list__item">
-          <figure class="list__item_img">
-            <img src="./dist/img/img-2.png" alt="img">
-          </figure>
-          <figure class="list__item_logo">
-            <img src="./dist/img/marvel-logo.png" alt="img">
-          </figure>
-          <p class="list__item_title">Фигурка Человек-Паук
-            <br>с дополнительным элементом и
-            <br>аксессуаром 15 см Железный костюм
-            <br>SPIDER-MAN F1916</p>
-          <div class="rating">
-            <div class="rating__row green">
-              <span class="rating__name">Волшебность</span>
-              <span class="rating__score">4,8</span>
+          <div class="list__item">
+            <figure class="list__item_img">
+              <img src="./dist/img/img-2.png" alt="img">
+            </figure>
+            <figure class="list__item_logo">
+              <img src="./dist/img/marvel-logo.png" alt="img">
+            </figure>
+            <p class="list__item_title">Фигурка Человек-Паук
+              <br>с дополнительным элементом и
+              <br>аксессуаром 15 см Железный костюм
+              <br>SPIDER-MAN F1916</p>
+            <div class="rating">
+              <div class="rating__row green">
+                <span class="rating__name">Волшебность</span>
+                <span class="rating__score">4,8</span>
+              </div>
+              <div class="rating__row orange">
+                <span class="rating__name">Подарибельность</span>
+                <span class="rating__score">5,0</span>
+              </div>
+              <div class="rating__row red">
+                <span class="rating__name">Сказочность</span>
+                <span class="rating__score">4,7</span>
+              </div>
             </div>
-            <div class="rating__row orange">
-              <span class="rating__name">Подарибельность</span>
-              <span class="rating__score">5,0</span>
-            </div>
-            <div class="rating__row red">
-              <span class="rating__name">Сказочность</span>
-              <span class="rating__score">4,7</span>
-            </div>
+            <a href="#" class="list__item_btn">Где купить?</a>
+            <p class="list__item_note">Для детей от 8ми лет</p>
           </div>
-          <a href="#" class="list__item_btn">Где купить?</a>
-          <p class="list__item_note">Для детей от 8ми лет</p>
-        </div>
-        <div class="list__item">
-          <figure class="list__item_img">
-            <img src="./dist/img/img-2.png" alt="img">
-          </figure>
-          <figure class="list__item_logo">
-            <img src="./dist/img/marvel-logo.png" alt="img">
-          </figure>
-          <p class="list__item_title">Фигурка Человек-Паук
-            <br>с дополнительным элементом и
-            <br>аксессуаром 15 см Железный костюм
-            <br>SPIDER-MAN F1916</p>
-          <div class="rating">
-            <div class="rating__row green">
-              <span class="rating__name">Волшебность</span>
-              <span class="rating__score">4,8</span>
+          <div class="list__item">
+            <figure class="list__item_img">
+              <img src="./dist/img/img-2.png" alt="img">
+            </figure>
+            <figure class="list__item_logo">
+              <img src="./dist/img/marvel-logo.png" alt="img">
+            </figure>
+            <p class="list__item_title">Фигурка Человек-Паук
+              <br>с дополнительным элементом и
+              <br>аксессуаром 15 см Железный костюм
+              <br>SPIDER-MAN F1916</p>
+            <div class="rating">
+              <div class="rating__row green">
+                <span class="rating__name">Волшебность</span>
+                <span class="rating__score">4,8</span>
+              </div>
+              <div class="rating__row orange">
+                <span class="rating__name">Подарибельность</span>
+                <span class="rating__score">5,0</span>
+              </div>
+              <div class="rating__row red">
+                <span class="rating__name">Сказочность</span>
+                <span class="rating__score">4,7</span>
+              </div>
             </div>
-            <div class="rating__row orange">
-              <span class="rating__name">Подарибельность</span>
-              <span class="rating__score">5,0</span>
-            </div>
-            <div class="rating__row red">
-              <span class="rating__name">Сказочность</span>
-              <span class="rating__score">4,7</span>
-            </div>
+            <a href="#" class="list__item_btn">Где купить?</a>
+            <p class="list__item_note">Для детей от 8ми лет</p>
           </div>
-          <a href="#" class="list__item_btn">Где купить?</a>
-          <p class="list__item_note">Для детей от 8ми лет</p>
-        </div>
-        <div class="list__item">
-          <figure class="list__item_img">
-            <img src="./dist/img/img-2.png" alt="img">
-          </figure>
-          <figure class="list__item_logo">
-            <img src="./dist/img/marvel-logo.png" alt="img">
-          </figure>
-          <p class="list__item_title">Фигурка Человек-Паук
-            <br>с дополнительным элементом и
-            <br>аксессуаром 15 см Железный костюм
-            <br>SPIDER-MAN F1916</p>
-          <div class="rating">
-            <div class="rating__row green">
-              <span class="rating__name">Волшебность</span>
-              <span class="rating__score">4,8</span>
+          <div class="list__item">
+            <figure class="list__item_img">
+              <img src="./dist/img/img-2.png" alt="img">
+            </figure>
+            <figure class="list__item_logo">
+              <img src="./dist/img/marvel-logo.png" alt="img">
+            </figure>
+            <p class="list__item_title">Фигурка Человек-Паук
+              <br>с дополнительным элементом и
+              <br>аксессуаром 15 см Железный костюм
+              <br>SPIDER-MAN F1916</p>
+            <div class="rating">
+              <div class="rating__row green">
+                <span class="rating__name">Волшебность</span>
+                <span class="rating__score">4,8</span>
+              </div>
+              <div class="rating__row orange">
+                <span class="rating__name">Подарибельность</span>
+                <span class="rating__score">5,0</span>
+              </div>
+              <div class="rating__row red">
+                <span class="rating__name">Сказочность</span>
+                <span class="rating__score">4,7</span>
+              </div>
             </div>
-            <div class="rating__row orange">
-              <span class="rating__name">Подарибельность</span>
-              <span class="rating__score">5,0</span>
-            </div>
-            <div class="rating__row red">
-              <span class="rating__name">Сказочность</span>
-              <span class="rating__score">4,7</span>
-            </div>
+            <a href="#" class="list__item_btn">Где купить?</a>
+            <p class="list__item_note">Для детей от 8ми лет</p>
           </div>
-          <a href="#" class="list__item_btn">Где купить?</a>
-          <p class="list__item_note">Для детей от 8ми лет</p>
-        </div>
-        <div class="list__item">
-          <figure class="list__item_img">
-            <img src="./dist/img/img-2.png" alt="img">
-          </figure>
-          <figure class="list__item_logo">
-            <img src="./dist/img/marvel-logo.png" alt="img">
-          </figure>
-          <p class="list__item_title">Фигурка Человек-Паук
-            <br>с дополнительным элементом и
-            <br>аксессуаром 15 см Железный костюм
-            <br>SPIDER-MAN F1916</p>
-          <div class="rating">
-            <div class="rating__row green">
-              <span class="rating__name">Волшебность</span>
-              <span class="rating__score">4,8</span>
+          <div class="list__item">
+            <figure class="list__item_img">
+              <img src="./dist/img/img-2.png" alt="img">
+            </figure>
+            <figure class="list__item_logo">
+              <img src="./dist/img/marvel-logo.png" alt="img">
+            </figure>
+            <p class="list__item_title">Фигурка Человек-Паук
+              <br>с дополнительным элементом и
+              <br>аксессуаром 15 см Железный костюм
+              <br>SPIDER-MAN F1916</p>
+            <div class="rating">
+              <div class="rating__row green">
+                <span class="rating__name">Волшебность</span>
+                <span class="rating__score">4,8</span>
+              </div>
+              <div class="rating__row orange">
+                <span class="rating__name">Подарибельность</span>
+                <span class="rating__score">5,0</span>
+              </div>
+              <div class="rating__row red">
+                <span class="rating__name">Сказочность</span>
+                <span class="rating__score">4,7</span>
+              </div>
             </div>
-            <div class="rating__row orange">
-              <span class="rating__name">Подарибельность</span>
-              <span class="rating__score">5,0</span>
-            </div>
-            <div class="rating__row red">
-              <span class="rating__name">Сказочность</span>
-              <span class="rating__score">4,7</span>
-            </div>
+            <a href="#" class="list__item_btn">Где купить?</a>
+            <p class="list__item_note">Для детей от 8ми лет</p>
           </div>
-          <a href="#" class="list__item_btn">Где купить?</a>
-          <p class="list__item_note">Для детей от 8ми лет</p>
-        </div>
-        <div class="list__item">
-          <figure class="list__item_img">
-            <img src="./dist/img/img-2.png" alt="img">
-          </figure>
-          <figure class="list__item_logo">
-            <img src="./dist/img/marvel-logo.png" alt="img">
-          </figure>
-          <p class="list__item_title">Фигурка Человек-Паук
-            <br>с дополнительным элементом и
-            <br>аксессуаром 15 см Железный костюм
-            <br>SPIDER-MAN F1916</p>
-          <div class="rating">
-            <div class="rating__row green">
-              <span class="rating__name">Волшебность</span>
-              <span class="rating__score">4,8</span>
+          <div class="list__item">
+            <figure class="list__item_img">
+              <img src="./dist/img/img-2.png" alt="img">
+            </figure>
+            <figure class="list__item_logo">
+              <img src="./dist/img/marvel-logo.png" alt="img">
+            </figure>
+            <p class="list__item_title">Фигурка Человек-Паук
+              <br>с дополнительным элементом и
+              <br>аксессуаром 15 см Железный костюм
+              <br>SPIDER-MAN F1916</p>
+            <div class="rating">
+              <div class="rating__row green">
+                <span class="rating__name">Волшебность</span>
+                <span class="rating__score">4,8</span>
+              </div>
+              <div class="rating__row orange">
+                <span class="rating__name">Подарибельность</span>
+                <span class="rating__score">5,0</span>
+              </div>
+              <div class="rating__row red">
+                <span class="rating__name">Сказочность</span>
+                <span class="rating__score">4,7</span>
+              </div>
             </div>
-            <div class="rating__row orange">
-              <span class="rating__name">Подарибельность</span>
-              <span class="rating__score">5,0</span>
-            </div>
-            <div class="rating__row red">
-              <span class="rating__name">Сказочность</span>
-              <span class="rating__score">4,7</span>
-            </div>
+            <a href="#" class="list__item_btn">Где купить?</a>
+            <p class="list__item_note">Для детей от 8ми лет</p>
           </div>
-          <a href="#" class="list__item_btn">Где купить?</a>
-          <p class="list__item_note">Для детей от 8ми лет</p>
         </div>
 
       </div>
@@ -484,7 +548,7 @@
   <p class="footer__text">* Той адвайзер     ** Hasbro (Хасбро)</p>
 </footer>
 
-<div class="modal active" data-close="true">
+<div class="modal" data-close="true">
   <div class="modal__wrap">
     <span class="close" data-close="true"></span>
     <div class="modal__header">
@@ -517,9 +581,9 @@
         <p class="modal__text_t">Выйдите на новый уровень игры с бластерами и стрелами Нёрф Ультра! Бластеры Нёрф Ультра имеют передовую конструкцию, которая обеспечивает производительность, предельное расстояние, точность и скорость.
           <br><br>С бластерами Нёрф Ультра представлены стрелы Нёрф Ультра с инновационными наконечниками, изготовленными с использованием технологий Аэрофин и вспененного материала Нёрф Ультра.
           <br><br>Моторизированный бластер Нёрф Ультра Уан оснащен мощным барабаном на 25 стрел и благодаря высокой производительности этот бластер обеспечивает дальность полета до 25 метров.
-          <br><br>Продемонстрируйте свои навыки, стреляя бластером Nerf! Бластеры Нёрф Ультра предназначены только для использования со стрелами Нёрф Ультра. Рекомендуются защитные очки (не входят в комплект).Nerf и все связанные с ним термины являются товарными знаками Hasbro.
-          <br><br>В комплектеБластер, барабан, 20 стрел, инструкция
-          <br><br>Характеристики продуктаПереведите игру на новый уровень с бластером и стрелами Нёрф УльтраСтрелы Нёрф Ультра совершают полет на расстояние до 25 метровМоторизированный бластер Нёрф Ультра Уан оснащен мощным барабаном на 25 стрелС бластером представлено 25 стрел Нёрф Ультра с инновационным наконечником ПодробнееДля детей в возрасте от 8-ми летМогут образоваться мелкие детали, не для детей до 3-х летНе цельтесь в глаза и лицоИспользуйте только официальные стрелы NerfНе модифицируйте стрелы и бластерТребуется сборка взрослогоТребуется 4 батарейки типа 1,5V C (не входят в комплект)</p>
+          <br><br>Продемонстрируйте свои навыки, стреляя бластером Nerf! Бластеры Нёрф Ультра предназначены только для использования со стрелами Нёрф Ультра. Рекомендуются защитные очки (не входят в комплект).Nerf и все связанные с ним термины являются товарными знаками Hasbro.
+          <br><br>В комплектеБластер, барабан, 20 стрел, инструкция
+          <br><br>Характеристики продуктаПереведите игру на новый уровень с бластером и стрелами Нёрф УльтраСтрелы Нёрф Ультра совершают полет на расстояние до 25 метровМоторизированный бластер Нёрф Ультра Уан оснащен мощным барабаном на 25 стрелС бластером представлено 25 стрел Нёрф Ультра с инновационным наконечником ПодробнееДля детей в возрасте от 8-ми летМогут образоваться мелкие детали, не для детей до 3-х летНе цельтесь в глаза и лицоИспользуйте только официальные стрелы NerfНе модифицируйте стрелы и бластерТребуется сборка взрослогоТребуется 4 батарейки типа 1,5V C (не входят в комплект)</p>
         <div class="modal__text_hide"></div>
         <span class="modal__text_more">Показать подробную информацию</span>
       </div>

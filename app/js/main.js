@@ -2,6 +2,7 @@
 
 import $ from 'jquery';
 import './slick.min';
+import './select2.min';
 
 const mobileWidth = 767;
 let isMobile = checkWidth();
@@ -56,24 +57,18 @@ window.addEventListener('load', function () {
         })
     })();
 
-    (function toggleClasses() {
-        if (!document.querySelector('[data-toggle]')) return;
-
-        const elementsToToggle = [...document.querySelectorAll('[data-toggle]')];
-        elementsToToggle.forEach(t =>
-            t.addEventListener('click', () =>
-                t.classList.toggle('active')));
-    })();
-
     (function form() {
         if (!document.querySelector('form')) return;
 
         const form = document.querySelector('.form');
         const genderButtons = [...form.querySelectorAll('.gender')];
-        const genderValueInput = document.querySelector('input[name="gender"]');
-        // const valueValueInput = document.querySelector('input[name="value"]');
+        const genderValueInput = form.querySelector('input[name="gender"]');
+        const formFieldAge = form.querySelector('.form__field_age');
+        const values = [...form.querySelectorAll('span.value')];
+        const recommendList = document.querySelector('.list');
 
         genderButtons.forEach(g => g.addEventListener('click', selectGender));
+        values.forEach(v => v.addEventListener('click', selectValue));
 
         function selectGender(e) {
             e.preventDefault();
@@ -86,7 +81,38 @@ window.addEventListener('load', function () {
             }
 
             this.classList.add('active');
+
+            if (formFieldAge.classList.contains('hide')) {
+                formFieldAge.classList.remove('hide');
+            }
+
             genderValueInput.value = this.dataset.gender;
+        }
+
+        $('select[name="age"]').change(function(){
+
+            if ($('.form__field_value').has('hide')) {
+                $('.form__field_value').each(function () {
+                    $(this).removeClass('hide');
+                    $('.form').removeClass('pb-80');
+                })
+            }
+        });
+
+        function selectValue(e) {
+
+            this.classList.toggle('active');
+
+            const isActiveValue = document.querySelector('.value.active');
+
+            if (isActiveValue && recommendList.classList.contains('hide')) {
+                recommendList.classList.remove('hide');
+                return;
+            }
+
+            if (!isActiveValue && !recommendList.classList.contains('hide')) {
+                recommendList.classList.add('hide');
+            }
         }
     })();
 
@@ -152,6 +178,33 @@ window.addEventListener('load', function () {
             }
 
             this.classList.toggle('active');
+        }
+    })();
+
+    (function selectAge() {
+        if (!document.querySelector('.select')) return;
+
+        if($('.select').length > 1) {
+            $('select').each(function() {
+                let $this = $(this).not('.select-search');
+                let parent = $(this).not('.select-search').parents('.select');
+                $this.select2({
+                    minimumResultsForSearch: Infinity,
+                    dropdownParent: parent
+                });
+            });
+            $('.select-search').each(function() {
+                let $this = $(this);
+                let parent = $(this).parents('.select');
+                $this.select2({
+                    dropdownParent: parent
+                });
+            });
+        } else {
+            $('select').select2({
+                minimumResultsForSearch: Infinity,
+                dropdownParent: $('.select')
+            });
         }
     })();
 
