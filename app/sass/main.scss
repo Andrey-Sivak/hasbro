@@ -17,13 +17,14 @@
 body,
 html {
   position: relative;
-  overflow-x: hidden;
   font-family: 'Comic', sans-serif;
   scroll-behavior: smooth;
 }
 
-.main {
+.main,
+.footer {
   position: relative;
+  overflow-x: hidden;
 }
 
 figure img {
@@ -685,8 +686,10 @@ figure img {
   opacity: 0;
   z-index: -1;
   overflow: hidden;
-  height: auto;
   min-height: 100vh;
+  overflow-y: scroll;
+  height: 100vh;
+  padding: 50px 0;
 
   &.active {
     opacity: 1;
@@ -910,11 +913,11 @@ figure img {
 
 .select select + span.select2 {
   display: block;
-  padding: 15px 0 12px 40px;
+  padding: 18px 0 16px 40px;
 }
 
 .select .select2 {
-  width: 150px!important;
+  width: 190px!important;
 }
 
 .select .select2-container--default .select2-selection--single {
@@ -967,4 +970,8 @@ figure img {
   padding-left: 40px;
   border-top: 1px solid #888;
   color: $primary-color;
+}
+
+.forbidden-scroll {
+  overflow: hidden;
 }

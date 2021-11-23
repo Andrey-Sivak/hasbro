@@ -101,18 +101,24 @@ window.addEventListener('load', function () {
 
         function selectValue(e) {
 
-            this.classList.toggle('active');
-
-            const isActiveValue = document.querySelector('.value.active');
-
-            if (isActiveValue && recommendList.classList.contains('hide')) {
-                recommendList.classList.remove('hide');
+            if (this.classList.contains('active')) {
+                this.classList.remove('active');
+                recommendList.classList.add('hide');
                 return;
             }
 
-            if (!isActiveValue && !recommendList.classList.contains('hide')) {
+            if (document.querySelector('.value.active')) {
+
+                document.querySelector('.value.active')
+                    .classList.remove('active');
                 recommendList.classList.add('hide');
             }
+
+            this.classList.add('active');
+
+            setTimeout(() => {
+                recommendList.classList.remove('hide');
+            }, 300)
         }
     })();
 
@@ -156,6 +162,7 @@ window.addEventListener('load', function () {
         function modalShow(e) {
             e.preventDefault();
             modal.classList.add('active');
+            document.body.classList.add('forbidden-scroll');
         }
 
         function modalHide(e) {
@@ -164,6 +171,7 @@ window.addEventListener('load', function () {
             if (!target.dataset.close) return;
 
             modal.classList.remove('active');
+            document.body.classList.remove('forbidden-scroll');
         }
 
         function displayText(e) {
