@@ -9,6 +9,10 @@
   justify-content: center;
   align-items: flex-end;
 
+  @include response-to(small) {
+    padding-bottom: 140px;
+  }
+
   &__text {
     font-weight: 500;
     font-size: 14px;
@@ -26,9 +30,22 @@
 
   &__left {
     left: 0;
+
+    @include response-to(small) {
+      left: -29px;
+
+      img {
+        width: 379px;
+        height: auto;
+      }
+    }
   }
 
   &__right {
     right: 0;
+
+    @include response-to(small) {
+      display: none;
+    }
   }
 }
