@@ -1088,6 +1088,10 @@ figure img {
   height: 100vh;
   padding: 50px 0;
 
+  @include response-to(small) {
+    padding-top: 20px;
+  }
+
   &.active {
     opacity: 1;
     z-index: 100;
@@ -1106,6 +1110,11 @@ figure img {
     background-color: #fff;
     border-radius: 30px;
     padding-top: 30px;
+
+    @include response-to(small) {
+      max-width: 310px;
+      overflow: hidden;
+    }
   }
 
   .close {
@@ -1128,6 +1137,11 @@ figure img {
     justify-content: flex-start;
     margin-bottom: 20px;
 
+    @include response-to(small) {
+      display: block;
+      padding: 0 15px;
+    }
+
     &_img {
       width: 180px;
       height: 180px;
@@ -1140,6 +1154,14 @@ figure img {
         width: 100%;
         height: auto;
       }
+
+      @include response-to(small) {
+        margin-bottom: 10px;
+        width: 140px;
+        height: 140px;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
     &_title {
@@ -1148,10 +1170,24 @@ figure img {
       line-height: 120%;
       color: $primary-color;
       font-style: italic;
+
+      @include response-to(small) {
+        text-align: center;
+        font-size: 16px;
+
+        br {
+          display: none;
+        }
+      }
     }
 
     .rating {
       margin-left: 0;
+
+      @include response-to(small) {
+        margin-left: auto;
+        margin-bottom: 17px;
+      }
     }
   }
 
@@ -1159,6 +1195,10 @@ figure img {
     padding: 0 40px;
     position: relative;
     margin-bottom: 68px;
+
+    @include response-to(small) {
+      padding: 0 15px;
+    }
 
     &.active {
 
@@ -1179,6 +1219,7 @@ figure img {
       line-height: 120%;
       color: $primary-color;
       @include transition-ease;
+      font-family: 'ProximaNovaSemibold', sans-serif;
     }
 
     &_hide {
@@ -1198,6 +1239,7 @@ figure img {
       line-height: 120%;
       color: #CF2C4A;
       cursor: pointer;
+      font-family: 'ProximaNovaSemibold', sans-serif;
     }
   }
 
@@ -1206,11 +1248,21 @@ figure img {
     position: relative;
     padding: 0 40px 30px;
 
+    @include response-to(small) {
+      padding: 0 5px 30px;
+    }
+
     .modal-cloud {
       position: absolute;
       left: 0;
       width: 100%;
       bottom: 100%;
+
+      @include response-to(small) {
+        width: 650px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
 
     &_title {
@@ -1253,6 +1305,7 @@ figure img {
       line-height: 120%;
       color: $primary-color;
       margin-right: 10px;
+      font-family: 'ProximaNovaSemibold', sans-serif;
     }
 
     &_btn {
@@ -1264,6 +1317,7 @@ figure img {
       width: 100px;
       padding: 5px 0 6px;
       border-radius: 15px;
+      font-family: 'ProximaNovaSemibold', sans-serif;
 
       &:hover {
         text-decoration: underline;
@@ -1276,6 +1330,10 @@ figure img {
     background-color: $light-blue;
     border-radius: 0 0 30px 30px;
 
+    @include response-to(small) {
+      padding: 0 10px 30px;
+    }
+
     .shops {
       max-width: 510px;
       width: 100%;
@@ -1285,12 +1343,21 @@ figure img {
       justify-content: space-between;
       margin: 10px auto 0;
 
+      @include response-to(small) {
+        justify-content: center;
+      }
+
       &__item {
         width: 120px;
         padding: 4px 20px;
         background: #FFFFFF;
         border-radius: 20px;
         margin-bottom: 10px;
+
+        @include response-to(small) {
+          margin-left: 5px;
+          margin-right: 5px;
+        }
 
         img {
           max-width: 100%;

@@ -1839,6 +1839,9 @@ figure img {
   overflow-y: scroll;
   height: 100vh;
   padding: 50px 0; }
+  @media (max-width: 767px) {
+    .modal {
+      padding-top: 20px; } }
   .modal.active {
     opacity: 1;
     z-index: 100; }
@@ -1858,6 +1861,10 @@ figure img {
     background-color: #fff;
     border-radius: 30px;
     padding-top: 30px; }
+    @media (max-width: 767px) {
+      .modal__wrap {
+        max-width: 310px;
+        overflow: hidden; } }
   .modal .close {
     position: absolute;
     width: 22px;
@@ -1884,6 +1891,10 @@ figure img {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-bottom: 20px; }
+    @media (max-width: 767px) {
+      .modal__header {
+        display: block;
+        padding: 0 15px; } }
     .modal__header_img {
       width: 180px;
       height: 180px;
@@ -1913,18 +1924,38 @@ figure img {
         max-width: 100%;
         width: 100%;
         height: auto; }
+      @media (max-width: 767px) {
+        .modal__header_img {
+          margin-bottom: 10px;
+          width: 140px;
+          height: 140px;
+          margin-left: auto;
+          margin-right: auto; } }
     .modal__header_title {
       margin-bottom: 10px;
       font-size: 21px;
       line-height: 120%;
       color: #007BC4;
       font-style: italic; }
+      @media (max-width: 767px) {
+        .modal__header_title {
+          text-align: center;
+          font-size: 16px; }
+          .modal__header_title br {
+            display: none; } }
     .modal__header .rating {
       margin-left: 0; }
+      @media (max-width: 767px) {
+        .modal__header .rating {
+          margin-left: auto;
+          margin-bottom: 17px; } }
   .modal__text {
     padding: 0 40px;
     position: relative;
     margin-bottom: 68px; }
+    @media (max-width: 767px) {
+      .modal__text {
+        padding: 0 15px; } }
     .modal__text.active .modal__text_t {
       max-height: 600px; }
     .modal__text.active .modal__text_hide {
@@ -1937,7 +1968,8 @@ figure img {
       line-height: 120%;
       color: #007BC4;
       -webkit-transition: all ease-in-out .3s;
-      transition: all ease-in-out .3s; }
+      transition: all ease-in-out .3s;
+      font-family: 'ProximaNovaSemibold', sans-serif; }
     .modal__text_hide {
       position: absolute;
       background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
@@ -1954,16 +1986,27 @@ figure img {
       font-size: 14px;
       line-height: 120%;
       color: #CF2C4A;
-      cursor: pointer; }
+      cursor: pointer;
+      font-family: 'ProximaNovaSemibold', sans-serif; }
   .modal__buy-online {
     background-color: #D4EDFD;
     position: relative;
     padding: 0 40px 30px; }
+    @media (max-width: 767px) {
+      .modal__buy-online {
+        padding: 0 5px 30px; } }
     .modal__buy-online .modal-cloud {
       position: absolute;
       left: 0;
       width: 100%;
       bottom: 100%; }
+      @media (max-width: 767px) {
+        .modal__buy-online .modal-cloud {
+          width: 650px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+                  transform: translateX(-50%); } }
     .modal__buy-online_title {
       text-align: center;
       color: #007BC4;
@@ -2022,7 +2065,8 @@ figure img {
       font-size: 16px;
       line-height: 120%;
       color: #007BC4;
-      margin-right: 10px; }
+      margin-right: 10px;
+      font-family: 'ProximaNovaSemibold', sans-serif; }
     .modal__buy-online_btn {
       display: block;
       cursor: pointer;
@@ -2031,13 +2075,17 @@ figure img {
       text-align: center;
       width: 100px;
       padding: 5px 0 6px;
-      border-radius: 15px; }
+      border-radius: 15px;
+      font-family: 'ProximaNovaSemibold', sans-serif; }
       .modal__buy-online_btn:hover {
         text-decoration: underline; }
   .modal__buy-shop {
     padding: 0 40px 30px;
     background-color: #D4EDFD;
     border-radius: 0 0 30px 30px; }
+    @media (max-width: 767px) {
+      .modal__buy-shop {
+        padding: 0 10px 30px; } }
     .modal__buy-shop .shops {
       max-width: 510px;
       width: 100%;
@@ -2057,12 +2105,22 @@ figure img {
           -ms-flex-pack: justify;
               justify-content: space-between;
       margin: 10px auto 0; }
+      @media (max-width: 767px) {
+        .modal__buy-shop .shops {
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center; } }
       .modal__buy-shop .shops__item {
         width: 120px;
         padding: 4px 20px;
         background: #FFFFFF;
         border-radius: 20px;
         margin-bottom: 10px; }
+        @media (max-width: 767px) {
+          .modal__buy-shop .shops__item {
+            margin-left: 5px;
+            margin-right: 5px; } }
         .modal__buy-shop .shops__item img {
           max-width: 100%;
           width: 100%;
