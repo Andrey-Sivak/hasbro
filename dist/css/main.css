@@ -1055,6 +1055,11 @@ figure img {
     font-size: 32px;
     line-height: 120%;
     font-style: italic; }
+    .first-section__subcaption br {
+      display: none; }
+      @media (max-width: 767px) {
+        .first-section__subcaption br {
+          display: block; } }
     @media (max-width: 1200px) {
       .first-section__subcaption {
         font-size: 25px; } }

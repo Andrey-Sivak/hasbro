@@ -226,6 +226,14 @@ figure img {
     line-height: 120%;
     font-style: italic;
 
+    br {
+      display: none;
+
+      @include response-to(small) {
+        display: block;
+      }
+    }
+
     @include response-to(large) {
       font-size: 25px;
     }
