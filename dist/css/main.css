@@ -819,7 +819,8 @@ input[type="number"] {
     line-height: 120%;
     color: #007BC4;
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    font-family: 'ProximaNovaSemibold', sans-serif; }
   .footer__left, .footer__right {
     position: absolute;
     bottom: 0; }
