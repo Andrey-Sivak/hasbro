@@ -112,13 +112,19 @@ figure img {
     }
 
     @include response-to(small) {
-      z-index: 1;
-      margin-left: -20px;
+      display: none;
+    }
 
-      img {
-        width: 256px;
-        margin-top: -31px;
-        margin-bottom: -22px;
+    &-mob {
+      display: none;
+
+      @include response-to(small) {
+        display: block;
+        position: relative;
+        order: 3;
+        margin-top: -27px;
+        z-index: 1;
+        margin-bottom: 8px;
       }
     }
   }
@@ -139,17 +145,6 @@ figure img {
 
     @include response-to(small) {
       display: none;
-    }
-
-    &-mob {
-      display: none;
-      position: absolute;
-      right: 0;
-      bottom: 40px;
-
-      @include response-to(small) {
-        display: block;
-      }
     }
   }
 
@@ -204,13 +199,30 @@ figure img {
     position: absolute;
     top: -124px;
 
+    @include response-to(small) {
+      top: -41px;
+
+      img {
+        width: 208px;
+        height: auto;
+      }
+    }
+
     &.rt {
       right: -58px;
+
+      @include response-to(small) {
+        right: -60px;
+      }
     }
 
     &.lt {
       left: -58px;
       transform: scale(-1, 1);
+
+      @include response-to(small) {
+        left: -60px;
+      }
     }
   }
 
@@ -219,6 +231,10 @@ figure img {
     bottom: 0;
     z-index: 1;
     right: 0;
+
+    @include response-to(small) {
+      display: none;
+    }
   }
 
   &__one-tree {
@@ -226,6 +242,10 @@ figure img {
     z-index: 0;
     right: 231px;
     bottom: 110px;
+
+    @include response-to(small) {
+      display: none;
+    }
   }
 
   &__two-trees {
@@ -233,12 +253,28 @@ figure img {
     z-index: 0;
     right: -17px;
     bottom: 84px;
+
+    @include response-to(small) {
+      transform: scale(-1, 1);
+      right: unset;
+      left: -11px;
+      bottom: 0;
+
+      img {
+        width: 90px;
+        height: 191px;
+      }
+    }
   }
 
   &__left-bottom {
     left: 109px;
     position: absolute;
     bottom: -3px;
+
+    @include response-to(small) {
+      display: none;
+    }
   }
 
   &__christmas-tree {
@@ -246,6 +282,17 @@ figure img {
     bottom: 0;
     z-index: 0;
     left: -156px;
+
+    @include response-to(small) {
+      right: -17px;
+      bottom: 16px;
+      left: unset;
+
+      img {
+        width: 134px;
+        height: auto;
+      }
+    }
   }
 
   .snow-container {
@@ -257,6 +304,12 @@ figure img {
     width: 1000px;
     z-index: 3;
 
+    @include response-to(small) {
+      transform: unset;
+      left: 0;
+      width: 100%;
+    }
+
     .snow {
       position: absolute;
 
@@ -264,39 +317,89 @@ figure img {
         left: 105px;
         top: 50%;
         transform: translateY(-50%);
+
+        @include response-to(small) {
+          top: 49px;
+          left: 81px;
+          transform: unset;
+
+          img {
+            width: 26px;
+            height: 26px;
+          }
+        }
       }
 
       &.snow-2 {
         top: 100px;
         right: 250px;
+
+        @include response-to(small) {
+          top: 13px;
+          right: 18px;
+
+          img {
+            width: 17px;
+            height: 17px;
+          }
+        }
       }
 
       &.snow-3 {
         top: 110px;
         right: 70px;
+
+        @include response-to(small) {
+          top: 180px;
+          left: -10px;
+          right: unset;
+
+          img {
+            width: 44px;
+            height: 44px;
+          }
+        }
       }
 
       &.snow-4 {
         right: 173px;
         top: 280px;
+
+        @include response-to(small) {
+          top: 167px;
+          right: 28px;
+
+          img {
+            width: 26px;
+            height: 26px;
+          }
+        }
       }
 
       &.snow-5 {
         bottom: 168px;
         right: 203px;
+
+        @include response-to(small) {
+          bottom: unset;
+          top: 245px;
+          right: 11px;
+
+          img {
+            width: 17px;
+            height: 17px;
+          }
+        }
       }
     }
   }
 
   &__content {
+    position: relative;
+    z-index: 5;
 
     @include response-to(medium) {
       width: 100%;
-    }
-
-    @include response-to(small) {
-      position: relative;
-      z-index: 2;
     }
   }
 
@@ -319,7 +422,7 @@ figure img {
   &__advisor {
 
     @include response-to(medium) {
-      margin-bottom: 10px;
+      margin-bottom: 7px;
 
       img {
         width: 140px;
@@ -344,6 +447,7 @@ figure img {
       font-size: 36px;
       line-height: 41px;
       font-style: normal;
+      margin-bottom: 7px;
     }
   }
 
@@ -414,6 +518,7 @@ figure img {
       @include response-to(small) {
         font-size: 16px;
         font-style: normal;
+        margin-bottom: 10px;
       }
     }
 
@@ -460,9 +565,9 @@ figure img {
 
   @include response-to(small) {
     padding: 40px 0 70px;
-    background-image: url('../img/second-deco-right.svg');
-    background-position: right 46px;
-    background-size: cover;
+    background-image: url('../img/sec-sec-mob-bg.png');
+    background-position: center;
+    background-size: 95%;
   }
 
   &__caption {
