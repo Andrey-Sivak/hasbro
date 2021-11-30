@@ -955,8 +955,9 @@ figure img {
       padding-right: 10px; } }
   .first-section__children {
     position: absolute;
-    left: -2px;
-    bottom: 0; }
+    left: -6px;
+    bottom: -70px;
+    z-index: 1; }
     @media (max-width: 1366px) {
       .first-section__children img {
         width: 350px;
@@ -984,7 +985,8 @@ figure img {
   .first-section__presents {
     position: absolute;
     right: 0;
-    bottom: 0; }
+    bottom: 0;
+    z-index: 2; }
     @media (max-width: 1200px) {
       .first-section__presents img {
         width: 350px;
@@ -1027,11 +1029,75 @@ figure img {
         display: block; } }
   .first-section__right-bot-mob {
     right: 0;
-    z-index: 1; }
+    z-index: 2; }
     @media (max-width: 767px) {
       .first-section__right-bot-mob img {
         height: auto;
         width: 252px; } }
+  .first-section__garland {
+    position: absolute;
+    top: -124px; }
+    .first-section__garland.rt {
+      right: -58px; }
+    .first-section__garland.lt {
+      left: -58px;
+      -webkit-transform: scale(-1, 1);
+          -ms-transform: scale(-1, 1);
+              transform: scale(-1, 1); }
+  .first-section__rt-bottom {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    right: 0; }
+  .first-section__one-tree {
+    position: absolute;
+    z-index: 0;
+    right: 231px;
+    bottom: 110px; }
+  .first-section__two-trees {
+    position: absolute;
+    z-index: 0;
+    right: -17px;
+    bottom: 84px; }
+  .first-section__left-bottom {
+    left: 109px;
+    position: absolute;
+    bottom: -3px; }
+  .first-section__christmas-tree {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    left: -156px; }
+  .first-section .snow-container {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    width: 1000px;
+    z-index: 3; }
+    .first-section .snow-container .snow {
+      position: absolute; }
+      .first-section .snow-container .snow.snow-1 {
+        left: 105px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%); }
+      .first-section .snow-container .snow.snow-2 {
+        top: 100px;
+        right: 250px; }
+      .first-section .snow-container .snow.snow-3 {
+        top: 110px;
+        right: 70px; }
+      .first-section .snow-container .snow.snow-4 {
+        right: 173px;
+        top: 280px; }
+      .first-section .snow-container .snow.snow-5 {
+        bottom: 168px;
+        right: 203px; }
   @media (max-width: 992px) {
     .first-section__content {
       width: 100%; } }
@@ -1146,12 +1212,12 @@ figure img {
 
 .second-section {
   position: relative;
-  background-color: #007BC4;
+  background-color: #CF2C4A;
   padding: 50px 0;
-  background-image: url("../img/second-deco-left.svg"), url("../img/second-deco-right.svg");
-  background-position: left center, right center;
+  background-image: url("../img/sec-sec-bg.png");
+  background-position: center 20px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 1325px;
   z-index: 2; }
   @media (max-width: 767px) {
     .second-section {

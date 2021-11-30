@@ -87,8 +87,9 @@ figure img {
 
   &__children {
     position: absolute;
-    left: -2px;
-    bottom: 0;
+    left: -6px;
+    bottom: -70px;
+    z-index: 1;
 
     @media(max-width: 1366px) {
 
@@ -126,6 +127,7 @@ figure img {
     position: absolute;
     right: 0;
     bottom: 0;
+    z-index: 2;
 
     @include response-to(large) {
 
@@ -187,13 +189,101 @@ figure img {
 
   &__right-bot-mob {
     right: 0;
-    z-index: 1;
+    z-index: 2;
 
     @include response-to(small) {
 
       img {
         height: auto;
         width: 252px;
+      }
+    }
+  }
+
+  &__garland {
+    position: absolute;
+    top: -124px;
+
+    &.rt {
+      right: -58px;
+    }
+
+    &.lt {
+      left: -58px;
+      transform: scale(-1, 1);
+    }
+  }
+
+  &__rt-bottom {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    right: 0;
+  }
+
+  &__one-tree {
+    position: absolute;
+    z-index: 0;
+    right: 231px;
+    bottom: 110px;
+  }
+
+  &__two-trees {
+    position: absolute;
+    z-index: 0;
+    right: -17px;
+    bottom: 84px;
+  }
+
+  &__left-bottom {
+    left: 109px;
+    position: absolute;
+    bottom: -3px;
+  }
+
+  &__christmas-tree {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    left: -156px;
+  }
+
+  .snow-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    width: 1000px;
+    z-index: 3;
+
+    .snow {
+      position: absolute;
+
+      &.snow-1 {
+        left: 105px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &.snow-2 {
+        top: 100px;
+        right: 250px;
+      }
+
+      &.snow-3 {
+        top: 110px;
+        right: 70px;
+      }
+
+      &.snow-4 {
+        right: 173px;
+        top: 280px;
+      }
+
+      &.snow-5 {
+        bottom: 168px;
+        right: 203px;
       }
     }
   }
@@ -360,12 +450,12 @@ figure img {
 
 .second-section {
   position: relative;
-  background-color: $primary-color;
+  background-color: #CF2C4A;
   padding: 50px 0;
-  background-image: url('../img/second-deco-left.svg'), url('../img/second-deco-right.svg');
-  background-position: left center, right center;
+  background-image: url('../img/sec-sec-bg.png');
+  background-position: center 20px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 1325px;
   z-index: 2;
 
   @include response-to(small) {
