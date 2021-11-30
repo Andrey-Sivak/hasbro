@@ -435,7 +435,7 @@ figure img {
     color: #CF2C4A;
     font-size: 80px;
     line-height: 92px;
-    font-style: italic;
+
     margin-bottom: 30px;
 
     @include response-to(large) {
@@ -456,7 +456,7 @@ figure img {
     color: #CF2C4A;
     font-size: 26px;
     line-height: 120%;
-    font-style: italic;
+
 
     br {
       display: none;
@@ -512,7 +512,7 @@ figure img {
       margin-bottom: 20px;
       font-size: 21px;
       line-height: 120%;
-      font-style: italic;
+
       color: $primary-color;
 
       @include response-to(small) {
@@ -533,7 +533,7 @@ figure img {
       @include transition-ease;
       font-size: 24px;
       line-height: 120%;
-      font-style: italic;
+
       text-transform: uppercase;
       display: block;
       margin: 0 auto;
@@ -730,7 +730,7 @@ figure img {
     &_caption {
       font-size: 28px;
       line-height: 120%;
-      font-style: italic;
+
       margin-bottom: 10px;
       color: inherit;
 
@@ -772,7 +772,7 @@ figure img {
     text-align: center;
     font-size: 40px;
     line-height: 120%;
-    font-style: italic;
+
 
     @include response-to(medium) {
       margin-bottom: 25px;
@@ -915,7 +915,7 @@ figure img {
         border: 1px solid;
         font-size: 21px;
         line-height: 120%;
-        font-style: italic;
+
         cursor: pointer;
 
         @include response-to(small) {
@@ -1102,7 +1102,7 @@ figure img {
     line-height: 120%;
     text-align: center;
     color: $primary-color;
-    font-style: italic;
+
     margin-bottom: 42px;
 
     @include response-to(small) {
@@ -1232,7 +1232,7 @@ figure img {
       @include transition-ease;
       font-size: 21px;
       line-height: 120%;
-      font-style: italic;
+
       text-transform: uppercase;
       display: block;
       margin: 0 auto;
@@ -1415,7 +1415,7 @@ figure img {
       font-size: 21px;
       line-height: 120%;
       color: $primary-color;
-      font-style: italic;
+
 
       @include response-to(small) {
         text-align: center;
@@ -1517,7 +1517,7 @@ figure img {
       color: $primary-color;
       font-size: 18px;
       line-height: 120%;
-      font-style: italic;
+
 
       @include response-to(small) {
         font-style: normal;

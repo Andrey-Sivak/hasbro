@@ -1210,7 +1210,6 @@ figure img {
     color: #CF2C4A;
     font-size: 80px;
     line-height: 92px;
-    font-style: italic;
     margin-bottom: 30px; }
     @media (max-width: 1200px) {
       .first-section__caption {
@@ -1226,8 +1225,7 @@ figure img {
     margin-bottom: 34px;
     color: #CF2C4A;
     font-size: 26px;
-    line-height: 120%;
-    font-style: italic; }
+    line-height: 120%; }
     .first-section__subcaption br {
       display: none; }
       @media (max-width: 767px) {
@@ -1265,7 +1263,6 @@ figure img {
       margin-bottom: 20px;
       font-size: 21px;
       line-height: 120%;
-      font-style: italic;
       color: #007BC4; }
       @media (max-width: 767px) {
         .first-section__block_text {
@@ -1284,7 +1281,6 @@ figure img {
       transition: all ease-in-out .3s;
       font-size: 24px;
       line-height: 120%;
-      font-style: italic;
       text-transform: uppercase;
       display: block;
       margin: 0 auto;
@@ -1434,7 +1430,6 @@ figure img {
   .second-section__slider_caption {
     font-size: 28px;
     line-height: 120%;
-    font-style: italic;
     margin-bottom: 10px;
     color: inherit; }
     @media (max-width: 992px) {
@@ -1466,8 +1461,7 @@ figure img {
     margin-bottom: 30px;
     text-align: center;
     font-size: 40px;
-    line-height: 120%;
-    font-style: italic; }
+    line-height: 120%; }
     @media (max-width: 992px) {
       .third-section__caption {
         margin-bottom: 25px; } }
@@ -1626,7 +1620,6 @@ figure img {
         border: 1px solid;
         font-size: 21px;
         line-height: 120%;
-        font-style: italic;
         cursor: pointer; }
         @media (max-width: 767px) {
           .third-section .form__field .value {
@@ -1759,7 +1752,6 @@ figure img {
     line-height: 120%;
     text-align: center;
     color: #007BC4;
-    font-style: italic;
     margin-bottom: 42px; }
     @media (max-width: 767px) {
       .list__title {
@@ -1912,7 +1904,6 @@ figure img {
       transition: all ease-in-out .3s;
       font-size: 21px;
       line-height: 120%;
-      font-style: italic;
       text-transform: uppercase;
       display: block;
       margin: 0 auto;
@@ -2117,8 +2108,7 @@ figure img {
       margin-bottom: 10px;
       font-size: 21px;
       line-height: 120%;
-      color: #007BC4;
-      font-style: italic; }
+      color: #007BC4; }
       @media (max-width: 767px) {
         .modal__header_title {
           text-align: center;
@@ -2194,8 +2184,7 @@ figure img {
       text-align: center;
       color: #007BC4;
       font-size: 18px;
-      line-height: 120%;
-      font-style: italic; }
+      line-height: 120%; }
       @media (max-width: 767px) {
         .modal__buy-online_title {
           font-style: normal; } }
