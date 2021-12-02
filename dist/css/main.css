@@ -2059,11 +2059,7 @@ figure img {
   overflow: hidden;
   min-height: 100vh;
   overflow-y: scroll;
-  height: 100vh;
-  padding: 50px 0; }
-  @media (max-width: 767px) {
-    .modal {
-      padding-top: 50px; } }
+  height: 100vh; }
   .modal.active {
     opacity: 1;
     z-index: 100; }
@@ -2082,11 +2078,15 @@ figure img {
     width: 100%;
     background-color: #fff;
     border-radius: 30px;
-    padding-top: 30px; }
+    padding-top: 30px;
+    margin: 50px 0; }
     @media (max-width: 767px) {
       .modal__wrap {
-        max-width: 310px;
+        max-width: 95%;
         overflow: hidden; } }
+  .modal__body {
+    position: relative;
+    overflow: hidden; }
   .modal .close {
     position: absolute;
     width: 22px;
@@ -2179,7 +2179,7 @@ figure img {
       .modal__text {
         padding: 0 15px; } }
     .modal__text.active .modal__text_t {
-      max-height: 600px; }
+      max-height: 1500px; }
     .modal__text.active .modal__text_hide {
       opacity: 0; }
     .modal__text_t {

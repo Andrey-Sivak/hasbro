@@ -1373,11 +1373,6 @@ figure img {
   min-height: 100vh;
   overflow-y: scroll;
   height: 100vh;
-  padding: 50px 0;
-
-  @include response-to(small) {
-    padding-top: 50px;
-  }
 
   &.active {
     opacity: 1;
@@ -1397,11 +1392,17 @@ figure img {
     background-color: #fff;
     border-radius: 30px;
     padding-top: 30px;
+    margin: 50px 0;
 
     @include response-to(small) {
-      max-width: 310px;
+      max-width: 95%;
       overflow: hidden;
     }
+  }
+
+  &__body {
+    position: relative;
+    overflow: hidden;
   }
 
   .close {
@@ -1491,7 +1492,7 @@ figure img {
     &.active {
 
       .modal__text_t {
-        max-height: 600px;
+        max-height: 1500px;
       }
 
       .modal__text_hide {
