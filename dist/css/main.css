@@ -2270,7 +2270,12 @@ figure img {
       line-height: 120%;
       color: #007BC4;
       margin-right: 10px;
-      font-family: 'ProximaNovaSemibold', sans-serif; }
+      font-family: 'ProximaNovaSemibold', sans-serif;
+      padding-right: 15px;
+      background-repeat: no-repeat;
+      background-position: right 3px;
+      background-size: initial;
+      background-image: url("../img/rub.svg"); }
     .modal__buy-online_btn {
       display: block;
       cursor: pointer;

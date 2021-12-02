@@ -1598,6 +1598,11 @@ figure img {
       color: $primary-color;
       margin-right: 10px;
       font-family: 'ProximaNovaSemibold', sans-serif;
+      padding-right: 15px;
+      background-repeat: no-repeat;
+      background-position: right 3px;
+      background-size: initial;
+      background-image: url('../img/rub.svg');
     }
 
     &_btn {
