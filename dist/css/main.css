@@ -2034,26 +2034,6 @@ figure img {
   top: 0;
   left: 0;
   right: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
   opacity: 0;
   z-index: -1;
   overflow: hidden;
@@ -2079,7 +2059,7 @@ figure img {
     background-color: #fff;
     border-radius: 30px;
     padding-top: 30px;
-    margin: 250px 0; }
+    margin: 250px auto; }
     @media (max-width: 767px) {
       .modal__wrap {
         max-width: 95%;

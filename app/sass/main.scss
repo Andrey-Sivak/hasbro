@@ -1366,7 +1366,6 @@ figure img {
   top: 0;
   left: 0;
   right: 0;
-  @include flex-center();
   opacity: 0;
   z-index: -1;
   overflow: hidden;
@@ -1392,7 +1391,7 @@ figure img {
     background-color: #fff;
     border-radius: 30px;
     padding-top: 30px;
-    margin: 250px 0;
+    margin: 250px auto;
 
     @include response-to(small) {
       max-width: 95%;
