@@ -2079,14 +2079,13 @@ figure img {
     background-color: #fff;
     border-radius: 30px;
     padding-top: 30px;
-    margin: 50px 0; }
+    margin: 250px 0; }
     @media (max-width: 767px) {
       .modal__wrap {
         max-width: 95%;
         overflow: hidden; } }
   .modal__body {
-    position: relative;
-    overflow: hidden; }
+    position: relative; }
   .modal .close {
     position: absolute;
     width: 22px;
