@@ -14,7 +14,10 @@
   }
 
   &__left,
-  &__right {
+  &__right,
+  &__center,
+  &__snow,
+  &__snow-mob {
     position: absolute;
     bottom: 0;
   }
@@ -37,6 +40,33 @@
 
     @include response-to(small) {
       display: none;
+    }
+  }
+
+  &__center {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__snow {
+    bottom: 23px;
+    left: 52%;
+    transform: translateX(-50%);
+
+    @include response-to(small) {
+      display: none;
+    }
+
+    &-mob {
+      display: none;
+      bottom: unset;
+
+      @include response-to(small) {
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 14px;
+      }
     }
   }
 }

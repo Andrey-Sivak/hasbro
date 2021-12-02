@@ -961,6 +961,15 @@ figure img {
           }
         }
 
+        &.purple {
+          color: $purple;
+          border-color: $purple;
+
+          &.active {
+            background-color: $purple;
+          }
+        }
+
         &.active {
           color: #fff;
         }
@@ -1059,7 +1068,7 @@ figure img {
     min-width: 736px;
 
     @include response-to(small) {
-      top: 100%;
+      top: 99%;
     }
 
     img {
@@ -1080,6 +1089,38 @@ figure img {
 
   @include response-to(small) {
     padding-top: 80px;
+  }
+
+  &__empty {
+    display: block;
+    text-align: center;
+    color: #90CDF1;
+    font-family: 'ProximaNovaSemibold', sans-serif;
+
+    &.hide {
+      display: none;
+    }
+
+    &_img {
+      margin-bottom: 21px;
+
+      @include response-to(small) {
+
+        img {
+          width: 50px;
+          height: auto;
+        }
+      }
+    }
+
+    &_text {
+      font-size: 20px;
+      line-height: 120%;
+
+      @include response-to(small) {
+        font-size: 16px;
+      }
+    }
   }
 }
 
@@ -1643,6 +1684,7 @@ figure img {
 
 .select .select2-container .select2-selection--single .select2-selection__rendered {
   padding: 0;
+  font-family: 'ProximaNovaSemibold', sans-serif;
   line-height: 1;
 }
 

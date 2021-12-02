@@ -66,6 +66,7 @@ window.addEventListener('load', function () {
         const formFieldAge = form.querySelector('.form__field_age');
         const values = [...form.querySelectorAll('span.value')];
         const recommendList = document.querySelector('.list');
+        const emptyElem = document.querySelector('.fourth-section__empty');
 
         genderButtons.forEach(g => g.addEventListener('click', selectGender));
         values.forEach(v => v.addEventListener('click', selectValue));
@@ -104,6 +105,7 @@ window.addEventListener('load', function () {
             if (this.classList.contains('active')) {
                 this.classList.remove('active');
                 recommendList.classList.add('hide');
+                emptyElem.classList.remove('hide');
                 return;
             }
 
@@ -112,12 +114,14 @@ window.addEventListener('load', function () {
                 document.querySelector('.value.active')
                     .classList.remove('active');
                 recommendList.classList.add('hide');
+                emptyElem.classList.remove('hide');
             }
 
             this.classList.add('active');
 
             setTimeout(() => {
                 recommendList.classList.remove('hide');
+                emptyElem.classList.add('hide');
             }, 300)
         }
     })();
