@@ -1391,7 +1391,7 @@ figure img {
     background-color: #fff;
     border-radius: 30px;
     padding-top: 30px;
-    margin: 250px auto;
+    margin: 50px auto;
 
     @include response-to(small) {
       max-width: 95%;
@@ -1401,7 +1401,7 @@ figure img {
 
   &__body {
     position: relative;
-    //overflow: hidden;
+    overflow: hidden;
   }
 
   .close {
