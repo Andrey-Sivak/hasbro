@@ -67,6 +67,7 @@ window.addEventListener('load', function () {
         const values = [...form.querySelectorAll('span.value')];
         const recommendList = document.querySelector('.list');
         const emptyElem = document.querySelector('.fourth-section__empty');
+        const valueInput = document.getElementById('value');
 
         genderButtons.forEach(g => g.addEventListener('click', selectGender));
         values.forEach(v => v.addEventListener('click', selectValue));
@@ -106,6 +107,7 @@ window.addEventListener('load', function () {
                 this.classList.remove('active');
                 recommendList.classList.add('hide');
                 emptyElem.classList.remove('hide');
+                valueInput.value = '';
                 return;
             }
 
@@ -118,6 +120,7 @@ window.addEventListener('load', function () {
             }
 
             this.classList.add('active');
+            valueInput.value = this.innerHTML;
 
             setTimeout(() => {
                 recommendList.classList.remove('hide');
