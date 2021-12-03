@@ -144,7 +144,7 @@ figure img {
   &__presents {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 11px;
     z-index: 2;
 
     @include response-to(large) {

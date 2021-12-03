@@ -1027,7 +1027,7 @@ figure img {
   .first-section__presents {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 11px;
     z-index: 2; }
     @media (max-width: 1200px) {
       .first-section__presents img {
