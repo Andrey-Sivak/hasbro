@@ -2014,6 +2014,10 @@ figure img {
       color: #FF496B; }
     .rating__row.orange {
       color: #FFA724; }
+    .rating__row.blue {
+      color: #01C6E1; }
+    .rating__row.purple {
+      color: #B37FF5; }
   .rating__name {
     font-weight: 600;
     font-size: 14px;
@@ -2113,7 +2117,8 @@ figure img {
         display: block;
         padding: 0 15px; } }
     .modal__header_img {
-      width: 180px;
+      min-width: 180px;
+      max-width: 180px;
       height: 180px;
       display: -webkit-box;
       display: -webkit-flex;
@@ -2144,7 +2149,8 @@ figure img {
       @media (max-width: 767px) {
         .modal__header_img {
           margin-bottom: 10px;
-          width: 140px;
+          min-width: 140px;
+          max-width: 180px;
           height: 140px;
           margin-left: auto;
           margin-right: auto; } }
@@ -2152,7 +2158,8 @@ figure img {
       margin-bottom: 10px;
       font-size: 21px;
       line-height: 120%;
-      color: #007BC4; }
+      color: #007BC4;
+      padding-right: 7px; }
       @media (max-width: 767px) {
         .modal__header_title {
           text-align: center;

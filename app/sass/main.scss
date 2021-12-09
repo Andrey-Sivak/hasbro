@@ -1344,6 +1344,14 @@ figure img {
     &.orange {
       color: $orange;
     }
+
+    &.blue {
+      color: $blue;
+    }
+
+    &.purple {
+      color: $purple;
+    }
   }
 
   &__name {
@@ -1448,7 +1456,8 @@ figure img {
     }
 
     &_img {
-      width: 180px;
+      min-width: 180px;
+      max-width: 180px;
       height: 180px;
       @include flex-center();
       margin-right: 20px;
@@ -1462,7 +1471,8 @@ figure img {
 
       @include response-to(small) {
         margin-bottom: 10px;
-        width: 140px;
+        min-width: 140px;
+        max-width: 180px;
         height: 140px;
         margin-left: auto;
         margin-right: auto;
@@ -1474,6 +1484,7 @@ figure img {
       font-size: 21px;
       line-height: 120%;
       color: $primary-color;
+      padding-right: 7px;
 
 
       @include response-to(small) {
