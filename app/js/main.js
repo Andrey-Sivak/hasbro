@@ -223,6 +223,26 @@ window.addEventListener('load', function () {
         }
     })();
 
+    (function cookie() {
+        if (!window.localStorage.getItem('isCookie')) {
+            const elem = `<div class="cookie">
+  <div class="container">
+    <p class="text">Мы используем файлы cookies для обработки статистических данных использования сайта. 
+    <br>Нажимая кнопку «СОГЛАСЕН», вы даете согласие на обработку ваших cookies файлов.</p>
+    <a href="#" class="cookie-btn btn">СОГЛАСЕН</a>
+  </div>
+</div>`;
+            document.body.insertAdjacentHTML('beforeend', elem);
+            document.querySelector('.cookie-btn')
+                .addEventListener('click', e => {
+                    e.preventDefault();
+
+                    window.localStorage.setItem('isCookie', 'true');
+                    document.body.removeChild(document.querySelector('.cookie'));
+                })
+        }
+    })();
+
 });
 
 function checkWidth() {

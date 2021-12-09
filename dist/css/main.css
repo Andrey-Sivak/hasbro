@@ -2415,3 +2415,55 @@ figure img {
 
 .forbidden-scroll {
   overflow: hidden; }
+
+.cookie {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+  background-color: #007BC4;
+  width: 100%;
+  color: #fff;
+  padding-top: 38px;
+  padding-bottom: 31px; }
+  @media (max-width: 767px) {
+    .cookie {
+      padding: 42px; } }
+  .cookie .container {
+    max-width: 690px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-family: 'Myriad Pro', sans-serif; }
+    @media (max-width: 767px) {
+      .cookie .container {
+        display: block; } }
+  .cookie .text {
+    font-size: 12px;
+    line-height: 14px; }
+  .cookie-btn {
+    display: block;
+    min-width: 85px;
+    max-width: 85px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 10px 0 8px;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    text-transform: uppercase; }
+    @media (max-width: 767px) {
+      .cookie-btn {
+        margin-top: 25px; } }
