@@ -780,6 +780,13 @@ input[type="number"] {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MYRIADPRO-REGULAR.OTF");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
 .container {
   max-width: 1420px;
   margin: 0 auto; }
