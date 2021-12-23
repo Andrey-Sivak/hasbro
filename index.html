@@ -96,6 +96,9 @@
 </div>
 
 <header class="header">
+  <span class="mob-menu">
+    <span class="mob-menu-btn"></span>
+  </span>
   <ul class="menu">
     <li class="menu__item">
       <a href="#rating">Рейтинг</a>
@@ -531,7 +534,7 @@
                 <span class="rating__score">4,7</span>
               </div>
             </div>
-            <a href="#" class="list__item_btn">Где купить?</a>
+            <a href="#" class="list__item_btn" data-popup="buy">Где купить?</a>
             <p class="list__item_note">Для детей от 8ми лет</p>
           </div>
           <div class="list__item">
@@ -559,7 +562,7 @@
                 <span class="rating__score">4,7</span>
               </div>
             </div>
-            <a href="#" class="list__item_btn">Где купить?</a>
+            <a href="#" class="list__item_btn" data-popup="buy">Где купить?</a>
             <p class="list__item_note">Для детей от 8ми лет</p>
           </div>
           <div class="list__item">
@@ -587,7 +590,7 @@
                 <span class="rating__score">4,7</span>
               </div>
             </div>
-            <a href="#" class="list__item_btn">Где купить?</a>
+            <a href="#" class="list__item_btn" data-popup="buy">Где купить?</a>
             <p class="list__item_note">Для детей от 8ми лет</p>
           </div>
 
@@ -616,7 +619,7 @@
                 <span class="rating__score">4,7</span>
               </div>
             </div>
-            <a href="#" class="list__item_btn">Где купить?</a>
+            <a href="#" class="list__item_btn" data-popup="buy">Где купить?</a>
             <p class="list__item_note">Для детей от 8ми лет</p>
           </div>
 
@@ -645,7 +648,7 @@
                 <span class="rating__score">4,7</span>
               </div>
             </div>
-            <a href="#" class="list__item_btn">Где купить?</a>
+            <a href="#" class="list__item_btn" data-popup="buy">Где купить?</a>
             <p class="list__item_note">Для детей от 8ми лет</p>
           </div>
 
@@ -674,7 +677,7 @@
                 <span class="rating__score">4,7</span>
               </div>
             </div>
-            <a href="#" class="list__item_btn">Где купить?</a>
+            <a href="#" class="list__item_btn" data-popup="buy">Где купить?</a>
             <p class="list__item_note">Для детей от 8ми лет</p>
           </div>
 
@@ -703,7 +706,7 @@
                 <span class="rating__score">4,7</span>
               </div>
             </div>
-            <a href="#" class="list__item_btn">Где купить?</a>
+            <a href="#" class="list__item_btn" data-popup="buy">Где купить?</a>
             <p class="list__item_note">Для детей от 8ми лет</p>
           </div>
 
@@ -732,7 +735,7 @@
                 <span class="rating__score">4,7</span>
               </div>
             </div>
-            <a href="#" class="list__item_btn">Где купить?</a>
+            <a href="#" class="list__item_btn" data-popup="buy">Где купить?</a>
             <p class="list__item_note">Для детей от 8ми лет</p>
           </div>
 
@@ -761,7 +764,7 @@
                 <span class="rating__score">4,7</span>
               </div>
             </div>
-            <a href="#" class="list__item_btn">Где купить?</a>
+            <a href="#" class="list__item_btn" data-popup="buy">Где купить?</a>
             <p class="list__item_note">Для детей от 8ми лет</p>
           </div>
 
@@ -790,7 +793,7 @@
                 <span class="rating__score">4,7</span>
               </div>
             </div>
-            <a href="#" class="list__item_btn">Где купить?</a>
+            <a href="#" class="list__item_btn" data-popup="buy">Где купить?</a>
             <p class="list__item_note">Для детей от 8ми лет</p>
           </div>
 
@@ -819,7 +822,7 @@
                 <span class="rating__score">4,7</span>
               </div>
             </div>
-            <a href="#" class="list__item_btn">Где купить?</a>
+            <a href="#" class="list__item_btn" data-popup="buy">Где купить?</a>
             <p class="list__item_note">Для детей от 8ми лет</p>
           </div>
         </div>
@@ -830,11 +833,71 @@
 
   <section class="five-section" id="articles">
 
+    <div class="five-section__garland-wrap">
+      <figure class="five-section__garland rt">
+        <img src="./dist/img/garland.png"
+             loading="lazy"
+             width="500"
+             height="235"
+             alt="img">
+      </figure>
+
+      <figure class="five-section__garland lt">
+        <img src="./dist/img/garland.png"
+             loading="lazy"
+             width="500"
+             height="235"
+             alt="img">
+      </figure>
+    </div>
+
+    <div class="five-section__wrap">
+      <p class="second-section__caption">что нужно учитывать при подборе подарка?</p>
+      <p class="second-section__text">Мы приготовили для вас статьи, которые помогут в этом нелегком
+        <br>вопросе. Приятного чтения!</p>
+
+      <div class="articles">
+        <div class="article">
+          <figure class="article__img">
+            <img src="./dist/img/article1-main.png"
+                 width="264"
+                 height="264"
+                 alt="img">
+          </figure>
+          <div class="article__content">
+            <p class="article__text">С какими трудностями <br class="mob">сталкивается родитель
+              <br>при выборе игрушек?!
+              <br><br>ТОП-5 сложностей
+              <br class="pc">от <br class="mob">«Няня.ру»</p>
+            <a href="#" data-popup="article1" class="article__btn">читать</a>
+          </div>
+        </div>
+        <div class="article">
+          <figure class="article__img">
+            <img src="./dist/img/article2-main.png"
+                 width="264"
+                 height="264"
+                 alt="img">
+          </figure>
+          <div class="article__content">
+            <p class="article__text">как легко выборать <br class="mob">игрушку в подарок, когда <br class="mob">вы идёте
+              <br class="pc">в гости <br class="mob">к друзьям, у которых <br class="mob">есть дети</p>
+            <a href="#" data-popup="article2" class="article__btn">читать</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 </main>
 
 <footer class="footer">
+  <figure class="footer__triangle">
+    <img src="./dist/img/blue-triangle.svg"
+         width="90"
+         alt="img">
+  </figure>
+
   <figure class="footer__left">
     <img src="./dist/img/footer-left.png"
          width="484"
@@ -876,7 +939,7 @@
   </figure>
 </footer>
 
-<div class="modal" data-close="true">
+<div class="modal" data-modal="buy" data-close="true">
   <div class="modal__wrap">
     <span class="close" data-close="true"></span>
     <div class="modal__header">
@@ -1013,6 +1076,250 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="modal art" data-modal="article1" data-close="true">
+  <div class="modal__wrap">
+    <span class="close" data-close="true"></span>
+    <figure class="modal__garland">
+      <img src="./dist/img/garland.png"
+           loading="lazy"
+           width="363"
+           alt="img">
+    </figure>
+
+    <figure class="modal__snow-bg">
+      <img src="./dist/img/article1-snow.svg"
+           width="606"
+           alt="img">
+    </figure>
+
+    <p class="modal__title">Лучший мой подарочек – <br class="pc">это  <br class="mob">ты! А для <br class="mob">остального <br>есть <br class="mob">ToyAdvisor</p>
+    <div class="modal__head">
+      <p class="modal__head_text">Новый год – один из важных праздников в году. Дети часто ставят его на второе место после своего Дня Рождения. Подарки и игрушки в это время поступают от всех родственников и конечно же от Деда Мороза.
+        <br><br>Хорошо, если ваш ребенок уже научился писать и в письме Дедушке обозначил то, что хочет получить на праздники, но если подарок держится в тайне, а написанное разгадать невозможно, на помощь придет наш сервис.</p>
+      <figure class="modal__head_trees">
+        <img src="./dist/img/modal-article1-header.svg"
+             width="188"
+             alt="img">
+      </figure>
+    </div>
+    <div class="modal__content">
+      <p class="modal__content_title">С какими ещё трудностями сталкивается родитель при выборе игрушек?! Наши друзья из «Няня.ру» составили ТОП-5 сложностей, с которыми можно справиться. </p>
+      <div class="modal__content_item">
+        <div class="modal__content_item-content">
+          <p class="modal__content_item-title">1. как все успеть?</p>
+          <p class="modal__content_item-text">В декабре у всех взрослых случаются совещания, бюджет на следующий год, куча встреч в зум и много всего другого. К сожалению, не всегда получается насладиться походом в магазин и долгим выбором игрушки для сына и дочки. Рекомендуем всё-таки выкроить 15 мин в плотном графике и открыть ToyAdvisor, где напечатав простые ответы, можно получить конкретные подарки: Храброго Капитана Америку, прекрасную Эльзу, модный Нёрф и много всего другого.</p>
+        </div>
+        <div class="modal__content_item-img">
+          <figure class="modal__content_item-img--content">
+            <img src="./dist/img/article1-main.png"
+                 width="250"
+                 height="250"
+                 alt="img">
+          </figure>
+        </div>
+      </div>
+      <div class="modal__content_item">
+        <div class="modal__content_item-content">
+          <p class="modal__content_item-title">2. айфон хочу</p>
+          <p class="modal__content_item-text">Как только ребёнку в руки попадает гаджет, то у Деда Мороза к Новому году он просит именно его. Что делать в таком случае? Говорить со своим сыном или дочкой о том, что Дедушка не знаком пока со сложно техническими устройствами, и вообще, только-только начал осваивать интернет. Поэтому айфоны, планшеты и прочие гаджеты мы не просим, а вспоминаем про любимые игрушки: маленькую пони, любимую массу для лепки, героев Марвел и прочие радости.</p>
+        </div>
+        <div class="modal__content_item-img">
+          <figure class="modal__content_item-img--content">
+            <img src="./dist/img/article1-2.png"
+                 width="250"
+                 height="250"
+                 alt="img">
+          </figure>
+        </div>
+      </div>
+      <div class="modal__content_item">
+        <div class="modal__content_item-content">
+          <p class="modal__content_item-title">3. место покупки</p>
+          <p class="modal__content_item-text">Магазины с детскими игрушками в декабре – это «ноев ковчег»: здесь собрались все, и чаще всего парами. Народу столько, что про дистанцию и «Быстро куплю, что нужно и домой» — можно только мечтать. Выход очевиден: определяетесь с подарком и заказываете онлайн. Главное – заложите хотя бы неделю на доставку, время горячее.</p>
+        </div>
+        <div class="modal__content_item-img">
+          <div class="modal__content_item-img--content">
+            <p class="modal__buy-online_title">купить онлайн</p>
+            <div class="modal__buy-online_row">
+              <figure class="modal__buy-online_img">
+                <img src="./dist/img/wb-logo.png" alt="img">
+              </figure>
+              <a href="#" class="modal__buy-online_btn">Купить</a>
+            </div>
+            <div class="modal__buy-online_row">
+              <figure class="modal__buy-online_img">
+                <img src="./dist/img/ozon-logo.png" alt="img">
+              </figure>
+              <a href="#" class="modal__buy-online_btn">Купить</a>
+            </div>
+            <div class="modal__buy-online_row">
+              <figure class="modal__buy-online_img">
+                <img src="./dist/img/sber-logo.png" alt="img">
+              </figure>
+              <a href="#" class="modal__buy-online_btn">Купить</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__content_item">
+        <div class="modal__content_item-content">
+          <p class="modal__content_item-title">4. «Я не в теме» </p>
+          <p class="modal__content_item-text">Успеть за всеми героями, которых собирают, любят и рисуют дети – очень сложно. Любимые персонажи меняются с такой скоростью, что можно разориться, и не факт, что ребенок вспомнит об игрушке, подаренной на Новый год, хотя бы через месяц. Выход есть – подарите настольные игры: «Монополия», к примеру, будет уютными вечерами собирать за круглым столом всю семью, а также научит детей бережно относиться к финансам, согласитесь, весьма полезный фактор.</p>
+        </div>
+        <div class="modal__content_item-img">
+          <figure class="modal__content_item-img--content">
+            <img src="./dist/img/article1-3.png"
+                 width="250"
+                 height="250"
+                 alt="img">
+          </figure>
+        </div>
+      </div>
+      <div class="modal__content_item">
+        <div class="modal__content_item-content">
+          <p class="modal__content_item-title">5. качество</p>
+          <p class="modal__content_item-text">Некоторые игрушки расстраивают родителей после пары дней использования: могут и волосы выпасть у куклы, и нога у супермена отвалиться и трансформер не раскладываться. Для того, чтобы избежать фиаско и не увидеть расстроенного малыша, нужно смотреть на производителя. К примеру, бренд Hasbro – крупнейшая американская компания, производящая игрушки с 1923 года. Почти сто лет радует детей и приносит праздник в дом.</p>
+        </div>
+        <div class="modal__content_item-img">
+          <figure class="modal__content_item-img--content">
+            <img src="./dist/img/hasbro-logo.png"
+                 width="164"
+                 height="178"
+                 alt="img">
+          </figure>
+        </div>
+      </div>
+    </div>
+    <p class="modal__footer">Ничего не бойтесь, мы с вами:
+      <br>ToyAdvisor поможет
+      <br>родителям с выбором
+      <br>игрушки.
+      <img src="./dist/img/footer-left.png"
+           width="304"
+           class="modal__footer_left"
+           loading="lazy"
+           alt="img">
+      <img src="./dist/img/christmas-tree.svg"
+           width="108"
+           class="modal__footer_christmas-tree"
+           alt="img">
+    </p>
+  </div>
+</div>
+
+<div class="modal art" data-modal="article2" data-close="true">
+  <div class="modal__wrap">
+    <span class="close" data-close="true"></span>
+    <figure class="modal__garland">
+      <img src="./dist/img/garland.png"
+           loading="lazy"
+           width="363"
+           alt="img">
+    </figure>
+    <figure class="modal__snow-bg">
+      <img src="./dist/img/article2-snow.svg"
+           width="618"
+           alt="img">
+    </figure>
+
+    <p class="modal__title">Лайфхак для <br class="mob">подбора
+      <br class="pc">игрушек</p>
+    <div class="modal__head">
+      <p class="modal__head_text">Что делать, если вы идете в гости к друзьям, а там дети, с которыми вы ни разу не общались, а подарки нужно выбрать?
+        <br class="mob"><br class="mob">Ответ есть: воспользуйтесь нашим сервисом, а наши друзья из «Все Дети Как Дети» прописали 5 шагов, чтобы сделать правильный выбор.</p>
+      <figure class="modal__head_child">
+        <img src="./dist/img/article2-head-bg.png"
+             width="241"
+             alt="img">
+      </figure>
+    </div>
+    <div class="modal__content">
+      <div class="modal__content_item">
+        <div class="modal__content_item-content">
+          <p class="modal__content_item-title">1. Пол ребёнка</p>
+          <p class="modal__content_item-text">Игрушки бывают для мальчиков, для девочек и универсальные. Безусловно, есть девочки, которые любят играть в машинки, в таком случае авто должно быть яркое и красивое, совсем как у семьи Свинки Пеппы в легендарном мультфильме. Есть мальчики, которые играют в куклы-фигуры, но это супергерои Марвел, которые спасают мир. </p>
+        </div>
+        <div class="modal__content_item-img">
+          <figure class="modal__content_item-img--content">
+            <img src="./dist/img/article2-1.png"
+                 width="250"
+                 height="250"
+                 alt="img">
+          </figure>
+        </div>
+      </div>
+      <div class="modal__content_item">
+        <div class="modal__content_item-content">
+          <p class="modal__content_item-title">2. возраст</p>
+          <p class="modal__content_item-text">Перед выбором подарка для детей друзей непременно уточните возраст малыша. «Спасибо, капитан» - скажет кто-то из вас, но это, действительно, первый и самый важный критерий для того, чтобы сориентироваться в интересах. Игрушек много, и каждая соответствует определенному возрасту. К примеру, фигурку Халка не следует дарить 3-х летнему мальчугану. Его папа конечно будет рад, а вот малыш может испугаться.</p>
+        </div>
+        <div class="modal__content_item-img">
+          <figure class="modal__content_item-img--content">
+            <img src="./dist/img/article2-2.png"
+                 width="250"
+                 height="250"
+                 alt="img">
+          </figure>
+        </div>
+      </div>
+      <div class="modal__content_item">
+        <div class="modal__content_item-content">
+          <p class="modal__content_item-title">3. круг интересов</p>
+          <p class="modal__content_item-text">Все дети разные. Кто-то может часами лепить поделки из Play-Doh, а кто-то предпочитает плести косички Эльзе. Откройте инстаграм друзей, посмотрите на фотографии с детьми. Подмечайте, за каким занятием они находятся, когда родители снимают видео для сторис. </p>
+        </div>
+        <div class="modal__content_item-img">
+          <figure class="modal__content_item-img--content">
+            <img src="./dist/img/article2-3.png"
+                 width="250"
+                 height="250"
+                 alt="img">
+          </figure>
+        </div>
+      </div>
+      <div class="modal__content_item">
+        <div class="modal__content_item-content">
+          <p class="modal__content_item-title">4. цель</p>
+          <p class="modal__content_item-text">Если вы хотите подарить что-то творческое для развития моторики и воображения малыша, то лучше всего здесь будет масса для лепки, которая волшебным образом превращается в любые фигуры и предметы. Если думаете в сторону сказок, то нужно подумать над новогодним сюжетом и персонажем из волшебного мультфильма «Холодное сердце». Хотите познакомить подросшего ребенка с персонажами комиксов, то обратите внимание на фигуры Капитана Америки, Спайдер Мена и непременно захватите Венома – всегда актуален в игре тот, от которого нужно спасать мир. </p>
+        </div>
+        <div class="modal__content_item-img">
+          <figure class="modal__content_item-img--content">
+            <img src="./dist/img/article2-main.png"
+                 width="250"
+                 height="250"
+                 alt="img">
+          </figure>
+        </div>
+      </div>
+      <div class="modal__content_item">
+        <div class="modal__content_item-content">
+          <p class="modal__content_item-title">5. будьте в теме</p>
+          <p class="modal__content_item-text">Выбрав и подарив игрушку, обязательно прочитайте про персонажа, посмотрите мультик, узнайте больше про подарок, который планируете преподнести. Ребенок будет счастлив, если вы сможете поддержать с ним диалог о новых нёрфах или трансформерах. Почувствуйте себя ребенком, иногда это очень полезно.</p>
+        </div>
+        <div class="modal__content_item-img">
+          <figure class="modal__content_item-img--content">
+            <img src="./dist/img/article2-4.png"
+                 width="250"
+                 height="250"
+                 alt="img">
+          </figure>
+        </div>
+      </div>
+    </div>
+    <p class="modal__footer">Дарите с удовольствием,
+      <br>всех с наступающими!
+      <img src="./dist/img/footer-left.png"
+           width="304"
+           class="modal__footer_left"
+           loading="lazy"
+           alt="img">
+      <img src="./dist/img/christmas-tree.svg"
+           width="108"
+           class="modal__footer_christmas-tree"
+           alt="img">
+    </p>
   </div>
 </div>
 

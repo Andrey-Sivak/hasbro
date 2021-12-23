@@ -6,10 +6,83 @@
   @include flex-center();
   z-index: 100;
 
+  @include response-to(small) {
+    top: 0;
+    left: 0;
+    background-color: rgba(#fff, .7);
+    padding: 15px 15px 20px;
+    border-bottom-right-radius: 20px;
+    @include transition-ease;
+    display: block;
+
+    &.active {
+      padding-bottom: 10px;
+      width: 120px;
+      border-bottom-right-radius: 0;
+    }
+  }
+
   &.scroll {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(#fff, .7);
+    background-color: rgba(#fff, .5);
+  }
+
+  .mob-menu {
+    display: none;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+
+    @include response-to(small) {
+      display: block;
+    }
+
+    &:before,
+    &:after,
+    &-btn {
+      @include transition-ease;
+      width: 100%;
+      position: absolute;
+      content: '';
+      left: 0;
+      background-color: $primary-color;
+      height: 4px;
+      display: block;
+      border-radius: 5px;
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: 0;
+    }
+
+    &-btn {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &.active {
+
+      .mob-menu-btn {
+        width: 0;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+        top: 50%;
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+        top: 50%;
+      }
+    }
   }
 }
