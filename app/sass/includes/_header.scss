@@ -1,0 +1,15 @@
+.header {
+  position: fixed;
+  top: 47px;
+  left: calc(50% + 82px);
+  padding: 17px 0;
+  @include flex-center();
+  z-index: 100;
+
+  &.scroll {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(#fff, .7);
+  }
+}

@@ -13,6 +13,7 @@
 @import "includes/footer";
 
 @import "components/loader";
+@import "components/menu";
 
 body,
 html {
@@ -61,7 +62,7 @@ figure img {
     height: 52vw;
   }
 
-  @include response-to(large) {
+  @include response-to(huge) {
     height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -450,7 +451,7 @@ figure img {
 
     margin-bottom: 30px;
 
-    @include response-to(large) {
+    @include response-to(huge) {
       font-size: 60px;
       line-height: 120%;
     }

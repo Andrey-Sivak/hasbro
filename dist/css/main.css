@@ -798,6 +798,38 @@ input[type="number"] {
 .no-scrolling {
   overflow: hidden; }
 
+.header {
+  position: fixed;
+  top: 47px;
+  left: calc(50% + 82px);
+  padding: 17px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  z-index: 100; }
+  .header.scroll {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7); }
+
 .footer {
   position: relative;
   padding-bottom: 20px;
@@ -947,6 +979,31 @@ input[type="number"] {
     opacity: 1;
     z-index: 10000; }
 
+.menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .menu__item:not(:last-of-type) {
+    margin-right: 20px; }
+  .menu__item a {
+    display: block;
+    width: 100px;
+    text-align: center;
+    color: #007BC4;
+    font-size: 14px;
+    line-height: 120%;
+    text-decoration: underline;
+    font-family: 'ProximaNovaSemibold', sans-serif; }
+
 body,
 html {
   position: relative;
@@ -999,7 +1056,7 @@ figure img {
   @media (min-width: 1472px) {
     .first-section {
       height: 52vw; } }
-  @media (max-width: 1200px) {
+  @media (max-width: 1400px) {
     .first-section {
       height: auto;
       padding-top: 20px;
@@ -1302,7 +1359,7 @@ figure img {
     font-size: 80px;
     line-height: 92px;
     margin-bottom: 30px; }
-    @media (max-width: 1200px) {
+    @media (max-width: 1400px) {
       .first-section__caption {
         font-size: 60px;
         line-height: 120%; } }

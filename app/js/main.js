@@ -243,6 +243,53 @@ window.addEventListener('load', function () {
         }
     })();
 
+    (function scroll() {
+        $('a[href*="#"]')
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function(event) {
+                if (window.location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
+                    && window.location.hostname === this.hostname
+                ) {
+                    let target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 100, function() {
+                            const $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) {
+                                return false;
+                            } else {
+                                $target.attr('tabindex','-1');
+                                $target.focus();
+                            }
+                        });
+                    }
+                }
+            });
+    })();
+
+    (function headerScroll() {
+
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', scrollPrizes);
+
+        function scrollPrizes() {
+            if (window.pageYOffset > 50) {
+                header.classList.add('scroll');
+                return;
+            }
+
+            if (header.classList.contains('scroll')) {
+                header.classList.remove('scroll');
+            }
+        }
+    })();
+
 });
 
 function checkWidth() {

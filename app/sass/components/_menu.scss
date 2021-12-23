@@ -1,0 +1,23 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__item {
+
+    &:not(:last-of-type) {
+      margin-right: 20px;
+    }
+
+    a {
+      display: block;
+      width: 100px;
+      text-align: center;
+      color: $primary-color;
+      font-size: 14px;
+      line-height: 120%;
+      text-decoration: underline;
+      font-family: 'ProximaNovaSemibold', sans-serif;
+    }
+  }
+}
