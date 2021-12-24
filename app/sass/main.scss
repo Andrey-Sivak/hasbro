@@ -1148,6 +1148,17 @@ figure img {
   position: relative;
   padding: 50px 0 55px;
 
+  &__snows {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 58px;
+
+    @include response-to(medium) {
+      display: none;
+    }
+  }
+
   &__garland-wrap {
     position: absolute;
     z-index: 0;
@@ -2040,6 +2051,11 @@ figure img {
     &_title {
       font-size: 21px;
       line-height: 120%;
+      margin-bottom: 50px;
+
+      @include response-to(small) {
+        margin-bottom: 16px;
+      }
     }
 
     &_item {
@@ -2064,7 +2080,7 @@ figure img {
       }
 
       &:first-of-type {
-        margin-top: 97px;
+        //margin-top: 97px;
       }
 
       &:nth-of-type(even) {
@@ -2099,7 +2115,7 @@ figure img {
           background-size: contain;
           background-position: center;
           background-repeat: no-repeat;
-          background-image: url('../img/star.png');
+          background-image: url('../img/snow-gold.svg');
         }
       }
 
@@ -2155,9 +2171,28 @@ figure img {
     text-align: center;
     padding-bottom: 55px;
     position: relative;
+    overflow: hidden;
 
     @include response-to(small) {
       padding-bottom: 146px;
+    }
+
+    br {
+
+      &.pc {
+
+        @include response-to(small) {
+          display: none;
+        }
+      }
+
+      &.mob {
+        display: none;
+
+        @include response-to(small) {
+          display: block;
+        }
+      }
     }
 
     &_left {

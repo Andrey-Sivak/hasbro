@@ -2021,6 +2021,16 @@ figure img {
   background-color: #007BC4;
   position: relative;
   padding: 50px 0 55px; }
+  .five-section__snows {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 58px; }
+    @media (max-width: 992px) {
+      .five-section__snows {
+        display: none; } }
   .five-section__garland-wrap {
     position: absolute;
     z-index: 0;
@@ -2902,7 +2912,11 @@ figure img {
         padding: 0 20px; } }
     .modal__content_title {
       font-size: 21px;
-      line-height: 120%; }
+      line-height: 120%;
+      margin-bottom: 50px; }
+      @media (max-width: 767px) {
+        .modal__content_title {
+          margin-bottom: 16px; } }
     .modal__content_item {
       display: -webkit-box;
       display: -webkit-flex;
@@ -2928,8 +2942,6 @@ figure img {
           .modal__content_item .modal__content_item-content {
             margin-right: 0;
             margin-bottom: 30px; } }
-      .modal__content_item:first-of-type {
-        margin-top: 97px; }
       .modal__content_item:nth-of-type(even) .modal__content_item-content {
         -webkit-box-ordinal-group: 3;
         -webkit-order: 2;
@@ -2960,7 +2972,7 @@ figure img {
           background-size: contain;
           background-position: center;
           background-repeat: no-repeat;
-          background-image: url("../img/star.png"); }
+          background-image: url("../img/snow-gold.svg"); }
       .modal__content_item-text {
         font-size: 14px;
         line-height: 120%;
@@ -3025,10 +3037,19 @@ figure img {
     line-height: 120%;
     text-align: center;
     padding-bottom: 55px;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     @media (max-width: 767px) {
       .modal__footer {
         padding-bottom: 146px; } }
+    @media (max-width: 767px) {
+      .modal__footer br.pc {
+        display: none; } }
+    .modal__footer br.mob {
+      display: none; }
+      @media (max-width: 767px) {
+        .modal__footer br.mob {
+          display: block; } }
     .modal__footer_left {
       position: absolute;
       bottom: 0;
