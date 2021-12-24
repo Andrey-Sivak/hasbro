@@ -3038,7 +3038,8 @@ figure img {
     text-align: center;
     padding-bottom: 55px;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    border-radius: 0 0 30px 30px; }
     @media (max-width: 767px) {
       .modal__footer {
         padding-bottom: 146px; } }

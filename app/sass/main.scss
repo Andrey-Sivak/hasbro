@@ -2172,6 +2172,7 @@ figure img {
     padding-bottom: 55px;
     position: relative;
     overflow: hidden;
+    border-radius: 0 0 30px 30px;
 
     @include response-to(small) {
       padding-bottom: 146px;
