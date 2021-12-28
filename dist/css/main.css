@@ -2820,11 +2820,8 @@ figure img {
           display: block; } }
   .modal__garland {
     position: absolute;
-    -webkit-transform: rotate(10.67deg);
-        -ms-transform: rotate(10.67deg);
-            transform: rotate(10.67deg);
-    top: -71px;
-    right: -135px; }
+    top: 0;
+    right: 0; }
     @media (max-width: 767px) {
       .modal__garland {
         display: none; } }
@@ -2883,6 +2880,8 @@ figure img {
       @media (max-width: 767px) {
         .modal__head_text {
           padding: 23px 18px 28px; } }
+      .modal__head_text a {
+        text-decoration: underline; }
       .modal__head_text br.mob {
         display: none; }
         @media (max-width: 767px) {
@@ -2914,6 +2913,8 @@ figure img {
       font-size: 21px;
       line-height: 120%;
       margin-bottom: 50px; }
+      .modal__content_title a {
+        text-decoration: underline; }
       @media (max-width: 767px) {
         .modal__content_title {
           margin-bottom: 16px; } }
@@ -3032,10 +3033,6 @@ figure img {
   .modal__footer {
     margin: 50px 0 0;
     width: 100%;
-    color: #CF2C4A;
-    font-size: 40px;
-    line-height: 120%;
-    text-align: center;
     padding-bottom: 55px;
     position: relative;
     overflow: hidden;
@@ -3050,6 +3047,47 @@ figure img {
       display: none; }
       @media (max-width: 767px) {
         .modal__footer br.mob {
+          display: block; } }
+    .modal__footer_text {
+      color: #CF2C4A;
+      font-size: 40px;
+      line-height: 120%;
+      position: relative;
+      text-align: center;
+      display: block;
+      z-index: 5; }
+    .modal__footer_close {
+      display: none;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      position: relative;
+      text-align: center;
+      -webkit-text-decoration-line: underline;
+              text-decoration-line: underline;
+      color: #007BC4;
+      font-family: 'ProximaNovaSemibold', sans-serif;
+      font-size: 14px;
+      line-height: 120%;
+      padding-right: 24px;
+      margin: 12px auto; }
+      .modal__footer_close:before {
+        background-image: url("../img/close14.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        display: block;
+        content: '';
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        right: 0; }
+      @media (max-width: 767px) {
+        .modal__footer_close {
           display: block; } }
     .modal__footer_left {
       position: absolute;
