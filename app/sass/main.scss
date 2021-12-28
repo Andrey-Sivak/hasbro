@@ -48,7 +48,6 @@ figure img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 100vh;
   background-color: $light-blue;
   text-align: center;
   display: flex;
@@ -59,7 +58,7 @@ figure img {
   z-index: 1;
 
   @media(min-width: 1472px) {
-    height: 52vw;
+    height: 49vw;
   }
 
   @include response-to(huge) {

@@ -1133,7 +1133,6 @@ figure img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 100vh;
   background-color: #D4EDFD;
   text-align: center;
   display: -webkit-box;
@@ -1157,7 +1156,7 @@ figure img {
   z-index: 1; }
   @media (min-width: 1472px) {
     .first-section {
-      height: 52vw; } }
+      height: 49vw; } }
   @media (max-width: 1400px) {
     .first-section {
       height: auto;
