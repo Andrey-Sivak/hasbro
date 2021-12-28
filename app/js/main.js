@@ -183,6 +183,9 @@ window.addEventListener('load', function () {
             const modal = document.querySelector('.modal.active');
 
             modal.classList.remove('active');
+            setTimeout(() => {
+                modal.scrollTop = 0;
+            }, 300);
             document.body.classList.remove('forbidden-scroll');
         }
 
